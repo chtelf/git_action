@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 
 #install package from var name
 
