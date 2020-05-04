@@ -2,4 +2,4 @@
 
 #install package from var name
 
-sh -c "find / *$INPUT_file_name*"
+sh -c "sudo find / *$INPUT_file_name*"
