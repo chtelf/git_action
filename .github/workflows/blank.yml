@@ -17,7 +17,6 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
-      - continue-on-error: false
       - uses : ./script.sh
         with :
           file_name : "wordpress"
