@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses : ./script.sh
+      - uses : ./install_package
         with :
           file_name : "wordpress"
            
