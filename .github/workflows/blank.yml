@@ -20,5 +20,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses : ./install_package
         with :
-          file_name : "wordpress"
+          file_name : "openjdk"
            
