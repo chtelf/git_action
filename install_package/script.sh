@@ -2,4 +2,5 @@
 
 #install package from var name
 
-sh -c "sudo find / *$INPUT_file_name*"
+sh -c "export jdkver=$INPUT_variable_name"
+sh -c "echo $jdkver"
