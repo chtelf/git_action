@@ -2,5 +2,4 @@
 
 #install package from var name
 
-sh -c "export jdkver=$INPUT_variable_name"
-sh -c "echo $jdkver"
+sh -c "echo $INPUT_variable_name"
