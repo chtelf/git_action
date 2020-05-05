@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.DOCKER_HUB_PWD }}
       - run: docker build -t chtelf/hello-world-gitaction:1.0.0 .
-      - run: docker push
+      - run: docker push chtelf/hello-world-gitaction:1.0.0
       - run: npm install
       - run: npm test
