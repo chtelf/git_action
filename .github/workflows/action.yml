@@ -14,6 +14,11 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.DOCKER_HUB_PWD }}
+      - uses: ./bump-version
+        with:
+          path: './VERSION'
+          step: 'patch'
+
       - run: docker build -t chtelf/hello-world-gitaction:1.0.0 .
       - run: docker push chtelf/hello-world-gitaction:1.0.0
       - run: npm install
